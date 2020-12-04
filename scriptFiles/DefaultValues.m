@@ -12,10 +12,10 @@ k2 = 1;   % Spring Coefficient of Suspension
 
 h2r = 2 * pi;
 Fs = 48000;
-tStop = 1;
+tStop = 100;
 dt = 1/Fs;
 t = (0:dt:tStop)';
-nFreq = 50;
+nFreq = 5000;
 sigFreq = 1;
 %%
 k =0.05;
