@@ -15,11 +15,7 @@ Fs = 48000;
 tStop = 100;
 dt = 1/Fs;
 t = (0:dt:tStop)';
-nFreq = 5000;
 sigFreq = 1;
 %%
-k =0.05;
-sig1 = sin(sigFreq * t *h2r);
-noise =k*sin(nFreq * t *h2r);
-
-signal = sig1 + noise;
+k =0.005;
+signal = k*sin(sigFreq * t *h2r);
